@@ -1,0 +1,198 @@
+@import url(https://fonts.googleapis.com/css2?family=Montserrat&display=swap);
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+q,
+ruby,
+s,
+samp,
+section,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol,
+ul {
+  list-style: none; }
+
+blockquote,
+q {
+  quotes: none; }
+  blockquote:after, blockquote:before,
+  q:after,
+  q:before {
+    content: '';
+    content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+html,
+body {
+  height: 100%;
+  padding: 0;
+  margin: 0; }
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  line-height: 1.15;
+  color: #20242F; }
+
+* {
+  box-sizing: border-box; }
+
+.title {
+  font-size: 20px;
+  line-height: 24px; }
+
+.sidenav[data-v-17bb2a83] {
+  display: flex;
+  flex-direction: column;
+  background-color: #313745;
+  color: #fff;
+  width: 130px;
+}
+li[data-v-17bb2a83] {
+  padding: 14px;
+  border-bottom: 1px solid #1F242F;
+}
+li.active[data-v-17bb2a83], li[data-v-17bb2a83]:hover {
+    background-color: #272D3B;
+}
+
+.header[data-v-740df574] {
+  background-color: #20242F;
+  color: #fff;
+  padding: 20px 20px 10px;
+}
+
+.table-container[data-v-5a7200a5] {
+  overflow-x: auto;
+}
+th[data-v-5a7200a5] {
+  background-color: #20242F;
+  color: #fff;
+  padding: 16px;
+}
+td[data-v-5a7200a5] {
+  padding: 16px;
+}
+
+.column-control[data-v-5e409e7e] {
+  display: flex;
+  flex-direction: column;
+  background-color: #313745;
+  color: #fff;
+  padding: 20px;
+  width: 290px;
+}
+
+.main-container[data-v-3ffae6b2] {
+  display: flex;
+  height: 100%;
+}
+.main[data-v-3ffae6b2] {
+  display: flex;
+  flex-direction: column;
+  width: calc(100% - 420px);
+}
+
