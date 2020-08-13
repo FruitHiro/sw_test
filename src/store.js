@@ -5,6 +5,7 @@ Vue.use(Vuex);
 
 export default new Vuex.Store({
     state: {
+        tab: 'Starships',
         data: {
             starships: {},
             planets: {},
@@ -14,6 +15,9 @@ export default new Vuex.Store({
     mutations: {
         updateData: (state, info) => {
             state.data[info.type] = info.data;
+        },
+        updateTab: (state, data) => {
+            state.tab = data;
         },
     },
     actions: {

@@ -3,12 +3,12 @@
         <table>
             <thead>
                 <tr>
-                    <th v-for="(value, name, i) in data[0]" :key="name" v-if="i < 13">{{ name }}</th>
+                    <th v-for="(value, name, i) in data[0]" :key="name" v-if="i < 8">{{ name }}</th>
                 </tr>
             </thead>
             <tbody>
                 <tr v-for="(item, i) in data" :key="i">
-                    <td v-for="(val, key, i) in item" :key="i" v-if="i < 13">{{ val }}</td>
+                    <td v-for="(val, key, i) in item" :key="i" v-if="i < 8">{{ val }}</td>
                 </tr>
             </tbody>
         </table>
@@ -52,9 +52,20 @@ export default {
 th {
     background-color: #20242F;
     color: #fff;
+    text-align: left;
     padding: 16px;
+
+    &::first-letter {
+        text-transform: uppercase;
+    }
 }
 td {
     padding: 16px;
+    white-space: nowrap;
+}
+tbody tr:nth-child(2n) td{
+    background-color: #F9FAFC;
+    border-top: 2px solid #E6E7E9;
+    border-bottom: 2px solid #E6E7E9;
 }
 </style>

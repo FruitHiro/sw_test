@@ -52,6 +52,13 @@ module.exports = {
             test: /\.vue$/,
             loader: 'vue-loader',
         },
+        {
+            test: /\.(png|jpe?g|gif|svg)$/i,
+            loader: 'file-loader',
+            options: {
+                outputPath: 'img',
+            },
+        },
         ],
     },
     resolve: {
@@ -64,7 +71,7 @@ module.exports = {
         //     title: 'SWAPI Table',
         // }),
         new MiniCssExtractPlugin({
-            filename: '[name].css',
+            filename: '/css/[name].css',
             chunkFilename: '[id].css',
         }),
         new VueLoaderPlugin(),

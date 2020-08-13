@@ -3,7 +3,7 @@
         <Sidenav />
         <div class="main">
             <Header />
-            <Table :data="starships" />
+            <Table :data="info" />
         </div>
         <Column-control />
     </div>
@@ -29,8 +29,11 @@ export default {
         };
     },
     computed: {
-        starships() {
-            return this.$store.state.data.starships.results;
+        tab() {
+            return this.$store.state.tab;
+        },
+        info() {
+            return this.$store.state.data[this.tab.toLowerCase()].results;
         }
     },
     created() {

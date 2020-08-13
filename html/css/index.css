@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css2?family=Montserrat&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap);
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -144,6 +144,53 @@ body {
   font-size: 20px;
   line-height: 24px; }
 
+.sub-title {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 25px;
+  text-transform: uppercase;
+  margin-top: 25px;
+  margin-bottom: 13px; }
+
+.btn {
+  display: inline-block;
+  background-color: #1DB7C2;
+  border: 0;
+  border-radius: 6px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  padding: 8px 12px;
+  margin-left: auto;
+  cursor: pointer; }
+  .btn-icon {
+    vertical-align: middle;
+    margin-right: 10px; }
+
+input[type="checkbox"] {
+  display: none; }
+  input[type="checkbox"] + label {
+    position: relative; }
+    input[type="checkbox"] + label::before {
+      display: inline-block;
+      content: "";
+      background-color: #474D59;
+      border-radius: 2px;
+      margin-right: 10px;
+      height: 28px;
+      width: 28px;
+      vertical-align: middle; }
+  input[type="checkbox"]:checked + label::after {
+    display: block;
+    content: "";
+    background: url(../img/97ba526837d558a749ce30d59fdc2f3c.svg) no-repeat 50% 50%;
+    height: 16px;
+    width: 16px;
+    position: absolute;
+    top: 3px;
+    left: 6px; }
+
 .sidenav[data-v-17bb2a83] {
   display: flex;
   flex-direction: column;
@@ -151,15 +198,33 @@ body {
   color: #fff;
   width: 130px;
 }
-li[data-v-17bb2a83] {
+.sidenav-logo[data-v-17bb2a83] {
+    padding-top: 20px;
+    padding-bottom: 16px;
+}
+.logo[data-v-17bb2a83] {
+  display: block;
+  margin: auto;
+}
+.nav-link[data-v-17bb2a83] {
   padding: 14px;
   border-bottom: 1px solid #1F242F;
+  cursor: pointer;
 }
-li.active[data-v-17bb2a83], li[data-v-17bb2a83]:hover {
+.nav-link.active[data-v-17bb2a83], .nav-link[data-v-17bb2a83]:hover {
     background-color: #272D3B;
+}
+.nav-link span[data-v-17bb2a83] {
+    display: block;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 15px;
+    margin-bottom: 3px;
 }
 
 .header[data-v-740df574] {
+  display: flex;
+  align-items: center;
   background-color: #20242F;
   color: #fff;
   padding: 20px 20px 10px;
@@ -171,10 +236,20 @@ li.active[data-v-17bb2a83], li[data-v-17bb2a83]:hover {
 th[data-v-5a7200a5] {
   background-color: #20242F;
   color: #fff;
+  text-align: left;
   padding: 16px;
+}
+th[data-v-5a7200a5]::first-letter {
+    text-transform: uppercase;
 }
 td[data-v-5a7200a5] {
   padding: 16px;
+  white-space: nowrap;
+}
+tbody tr:nth-child(2n) td[data-v-5a7200a5] {
+  background-color: #F9FAFC;
+  border-top: 2px solid #E6E7E9;
+  border-bottom: 2px solid #E6E7E9;
 }
 
 .column-control[data-v-5e409e7e] {
@@ -184,6 +259,17 @@ td[data-v-5a7200a5] {
   color: #fff;
   padding: 20px;
   width: 290px;
+}
+li[data-v-5e409e7e] {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+label span[data-v-5e409e7e] {
+  display: inline-block;
+}
+label span[data-v-5e409e7e]::first-letter {
+    text-transform: uppercase;
 }
 
 .main-container[data-v-3ffae6b2] {

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
 
 @import './reset';
 
@@ -20,4 +20,59 @@ body {
 .title {
     font-size: 20px;
     line-height: 24px;
+}
+.sub-title {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 25px;
+    text-transform: uppercase;
+    margin-top: 25px;
+    margin-bottom: 13px;
+}
+.btn {
+    display: inline-block;
+    background-color: #1DB7C2;
+    border: 0;
+    border-radius: 6px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    padding: 8px 12px;
+    margin-left: auto;
+    cursor: pointer;
+
+    &-icon {
+        vertical-align: middle;
+        margin-right: 10px;
+    }
+}
+input[type="checkbox"] {
+    display: none;
+
+    & + label {
+        position: relative;
+
+        &::before {
+            display: inline-block;
+            content: "";
+            background-color: #474D59;
+            border-radius: 2px;
+            margin-right: 10px;
+            height: 28px;
+            width: 28px;
+            vertical-align: middle;
+        }
+    }
+
+    &:checked + label::after {
+        display: block;
+        content: "";
+        background: url("../img/check.svg") no-repeat 50% 50%;
+        height: 16px;
+        width: 16px;
+        position: absolute;
+        top: 3px;
+        left: 6px;
+    }
 }

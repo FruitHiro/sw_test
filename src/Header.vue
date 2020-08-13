@@ -1,6 +1,9 @@
 <template v-cloak>
     <div class="header">
-        <div class="title">{{ test }}</div>
+        <div class="title">{{ tab }}</div>
+        <button type="button" class="btn" v-if="tab === 'Starships'">
+            <img src="img/compare.svg" class="btn-icon">Сравнить
+        </button>
     </div>
 </template>
 
@@ -16,7 +19,9 @@ export default {
         };
     },
     computed: {
-
+        tab() {
+            return this.$store.state.tab;
+        }
     },
     created() {
 
@@ -29,6 +34,8 @@ export default {
 
 <style lang="scss" scoped>
 .header {
+    display: flex;
+    align-items: center;
     background-color: #20242F;
     color: #fff;
     padding: 20px 20px 10px;
